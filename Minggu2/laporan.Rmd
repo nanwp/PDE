@@ -3,26 +3,45 @@ title: "Analisis Tugas 1"
 author: "Nanda Wijaya Putra"
 date: "2023-02-01"
 output:
-  html_document: default
   pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R markdown
+<br/>
+
+## Membuat laporan dengan R Markdown
 
 
-pada Minggu pertama kita telah diberikan pengenalan dasar dasar R untuk mengolah data.<br>pada minggu ini kita belajar umtuk membuat dokumen menggunakan R markdown, jadi R markdown ini adalah sebuah tools yang tersedia pada Rstudio 
+pada Minggu pertama kita telah diberikan pengenalan dasar dasar R untuk mengolah data.<br>pada minggu ini kita belajar umtuk membuat dokumen menggunakan R markdown, jadi R markdown ini adalah sebuah tools yang tersedia pada Rstudio yang biasa digunakan untuk membuat dokumen, dan juga bisa langsung include program bahasa R<br/>
 
 
+## mengambil data dari dataset iris
+R menyediakan data set yang sudah siap pakai, salah satunya adalah iris<br/>
+
+untuk mengambil data iris kita cukup mengetik `iris` pada console atau file ber-ekstensi .R yang akan menampung kodingan tersebut.<br/> 
 ```{r,comment=NA }
-# Load dataset iris
+# Load 5 baris pertama iris
 head(iris,5)
 ```
 
+<br/>
+untuk melihat struktur dataset menggunakan command `str` yang akan membantu dalam memisahkan data numerik dan num numerik<br/>
 
+```{r, comment=NA}
+# menampilkan struktur dataset
+str(iris)
+```
+<br/>
+karena kita telah tau struktur datanya kita bisa langsung mengambil data numeric dengan menggunakan command `fivenum()`
 
-`# di atas merupakan latihan`<br>
-`summary(list)`
+```{r,comment=NA}
+fivenum(iris$Petal.Width)
+fivenum(iris$Petal.Length)
+```
+<br/>
+
+kita telah tau cara mengambil data nomeric dari sebuah dataset, maka kita bisa langsung menghitung data data tersebut

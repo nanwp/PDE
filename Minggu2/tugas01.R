@@ -10,3 +10,5 @@ iris
 dataQ <- iris
 print(dataQ)
 head(dataQ,10)
+
+str(dataQ)
