@@ -1,0 +1,28 @@
+---
+title: "Analisis Tugas 1"
+author: "Nanda Wijaya Putra"
+date: "2023-02-01"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R markdown
+
+
+pada Minggu pertama kita telah diberikan pengenalan dasar dasar R untuk mengolah data.<br>pada minggu ini kita belajar umtuk membuat dokumen menggunakan R markdown, jadi R markdown ini adalah sebuah tools yang tersedia pada Rstudio 
+
+
+```{r,comment=NA }
+# Load dataset iris
+head(iris,5)
+```
+
+
+
+`# di atas merupakan latihan`<br>
+`summary(list)`
