@@ -1,4 +1,4 @@
-al <- fivenum(iris$Petal.Length)
+al <- (iris$Petal.Length)
 
 #Range
 r <- range(al)
@@ -12,6 +12,15 @@ print(paste("max - min : ",r1))
 #simpangan rata rata (mean deviation)
 #meanDeviation <- mad(a)
 #print(meanDeviation)
+
+#Rentang interquartile
+
+iqr <- IQR(iris$Petal.Length)
+q1 <- as.vector(quantile(iris$Petal.Length))
+qHasil <- q1[4] - q1[2]
+
+print(paste("Menggunakan IQR ",iqr))
+print(paste("Cara manual ",qHasil))
 
 
 #Variance

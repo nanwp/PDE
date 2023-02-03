@@ -1,5 +1,5 @@
-al <- fivenum(iris$Petal.Length)
-aw <- fivenum(iris$Petal.Width)
+al <- (iris$Petal.Length)
+aw <- (iris$Petal.Width)
 
 bl <- sum(al)/length(al) #rata rata data
 cl <- mean(al) #Nilai tengah
@@ -24,3 +24,4 @@ print(paste("Rata rata menggunakan fungsi mean : ", cw))
 print(paste("Nilai tengah : ",dw))
 print("Urutkan dari yang terkecil : ")
 print(ew)
+
